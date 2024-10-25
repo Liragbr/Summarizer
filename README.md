@@ -71,7 +71,6 @@ dotnet run
 YouTubeVideoAnalyzer/
 ├── AudioProcessing/
 │   ├── AudioDownloader.cs
-│   └── ConvertMp3ToWav.cs
 ├── Summarization/
 │   └── TextSummarizer.cs
 ├── Transcription/
