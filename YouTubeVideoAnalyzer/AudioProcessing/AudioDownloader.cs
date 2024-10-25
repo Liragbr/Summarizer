@@ -26,7 +26,6 @@ namespace YouTubeVideoAnalyzer.AudioProcessing
                 await _youtubeClient.Videos.Streams.DownloadAsync(audioStreamInfo, mp3FilePath);
                 Console.WriteLine("Download concluído: audio.mp3");
 
-                // Converte o MP3 para WAV
                 string wavFilePath = SaveFileToDocuments("audio.wav");
                 ConvertMp3ToWav(mp3FilePath, wavFilePath);
             }
@@ -36,13 +35,13 @@ namespace YouTubeVideoAnalyzer.AudioProcessing
             }
         }
 
-        public void ConvertMp3ToWav(string mp3File, string outputWavFile) // Alterado para public
+        public void ConvertMp3ToWav(string mp3File, string outputWavFile) 
         {
             try
             {
-                using (var reader = new MediaFoundationReader(mp3File)) // Alterado para MediaFoundationReader
+                using (var reader = new MediaFoundationReader(mp3File)) 
                 {
-                    var outFormat = new WaveFormat(16000, 1); // 16 kHz, mono
+                    var outFormat = new WaveFormat(16000, 1); 
                     using (var resampler = new MediaFoundationResampler(reader, outFormat))
                     {
                         resampler.ResamplerQuality = 60;

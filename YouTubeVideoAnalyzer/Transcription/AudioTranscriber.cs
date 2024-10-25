@@ -14,13 +14,11 @@ namespace YouTubeVideoAnalyzer.Transcription
             try
             {
                 var cultureInfo = new System.Globalization.CultureInfo("pt-BR");
-                
-                // Verifica se o idioma está disponível
+
                 var recognizerInfo = SpeechRecognitionEngine.InstalledRecognizers().FirstOrDefault(r => r.Culture.Equals(cultureInfo));
 
                 if (recognizerInfo == null)
                 {
-                    // Caso o pt-BR não esteja disponível, usa o en-US como fallback
                     cultureInfo = new System.Globalization.CultureInfo("en-US");
                     recognizerInfo = SpeechRecognitionEngine.InstalledRecognizers().FirstOrDefault(r => r.Culture.Equals(cultureInfo));
 
