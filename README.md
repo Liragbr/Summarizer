@@ -2,17 +2,6 @@
 
 This project, YouTube Video Analyzer, is a comprehensive tool designed to automate the process of downloading, transcribing, and summarizing audio from YouTube videos. It brings together several functionalities into a single, user-friendly application. This README will walk you through each component and explain how to set up, use, and extend the application.
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Detailed Workflow](#detailed-workflow)
-8. [Future Enhancements](#future-enhancements)
-9. [Contributing](#contributing)
-10. [License](#license)
 
 ## Overview
 The YouTube Video Analyzer is built to facilitate users in analyzing audio content from YouTube videos effortlessly. This tool automates:
